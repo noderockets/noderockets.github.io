@@ -23,20 +23,13 @@
 					<div class="col-12">
 
 						<!-- Logo -->
-						<!-- <a href="index.html" id="logo"><img src="images/nr/nrlogo.png" width="300"></a> -->
-
-						<h1><a href="index.html" id="logo">NodeRockets</a></h1>
+						<a href="index.html" id="logo"><img src="images/nr/nrlogo_redwhite.svg" width="300" style="padding-top: 13px"></a>
 
 						<!-- Nav -->
 						<nav id="nav">
-							<!-- <a href="index.html">Homepage</a> -->
-							<a href="mission.html">Mission Objectives</a>
-							<a href="mission.html">Photos/Videos</a>
-							<a href="blog.html">Blog</a>
-							<!-- <a href="threecolumn.html">Three Column</a> -->
-							<!-- <a href="twocolumn1.html">Two Column #1</a> -->
-							<!-- <a href="twocolumn2.html">Two Column #2</a> -->
-							<!-- <a href="onecolumn.html">One Column</a> -->
+							<a href="missionobj.html">Mission Objectives</a>
+							<a href="#">Photos/Videos</a>
+							<a href="#">Blog</a>
 						</nav>
 
 					</div>
@@ -56,22 +49,38 @@
 								<h2>Mission Objectives</h2>
 								<h3>Here is your mission, if choose to accept it</h3>
 							</header>
-							<p>
-								The main objective of your team is to build a javascript powered rocket that once launched will return safely to earth. Using
-								a 2-liter soda bottle as the engine for your rocket, it will use pressurized water and air as it's propellent and
-								can reach heights of several hundred feet.
-							</p>
 
-							<p>
-								Onboard the rocket (and preferrably in a seperate and dry compartment) is the command module. The command module is made
-								up of a Raspberry Pi running NodeJS, a 6-axis motion sensor, a temperature sensor, an altimeter and a servo. Using
-								the hardware provided and the data stream from the sensors, you must figure out a strategy for depolying the parachute
-								so that the rocket will safely land.
-							</p>
+							<p>The main objective of your team is to build a javascript powered rocket that once launched will record and use
+								telemetry data to safely return to earth ready for it’s next mission. Sounds easy enough right? Your rocket will
+								consist of the following components:</p>
 
-							<p>
-								MORE, MORE, MORE
-							</p>
+							<ul>
+								<li>Engine</li>
+								<li>Payload Compartment</li>
+								<li>Command Module</li>
+								<li>Parachute and Deployment Cover</li>
+								<li>Fins</li>
+								<li>Nose Cone</li>
+								<li>Launcher Platform</li>
+							</ul>
+
+
+							<p>The engine is made from a 2-liter soda bottle and uses water and pressurized air as a propellent. The payload compartment
+								is also made from a 2-liter soda bottle and will house the command module. The command module is the computer system
+								for the rocket. At its core is a Raspberry Pi running NodeJS. It also contains several sensors that expose their
+								data via a node module. Attached to the Pi is a servo which will be used to deploy the parachute. The parachute is
+								the simplest component, but may be the most important. Using the data from the sensors you can create a strategy
+								for deploying the chute. The fins, nose cone and overall aerodynamic design are critical for achieving the optimal
+								flight and highest altitude.</p>
+
+							<p>The launch platform consists of 3 valves for controlling the air, water and launch of the rocket. It also has a
+								sensor for calculating the air pressure of the system. The launch platform exposes an API for controlling the valves
+								and reading the pressure. You will need to use this API to control the different stages of launch.</p>
+
+							<p>In addition to the main rocket components, their is additional hardware (camera, led lights, gamepad, etc.) that
+								you can integrate with the command module or launch platform. It will be your teams job to engineer and incorporate
+								at least one additional item as part of your design. Your rocket will compete with other rockets for it’s ability
+								to be reusable, reach high altitude and also creativity.</p>
 
 
 							<ul class="check-list">
@@ -79,6 +88,10 @@
 								<li>Deploy Parachute</li>
 								<li>Incorporate Specialized Mission Hardware</li>
 							</ul>
+
+							<p>Below you will find the critical roles that your team needs to complete this mission. Each role has detailed instructions
+								on how to complete its job. You may have multiple people fill each role or have somebody fill multiple roles. It's
+								up to you, good luck!</p>
 						</section>
 
 					</div>
@@ -112,8 +125,7 @@
 							<a href="ground_control.html" class="bordered-feature-image"><img src="images/pic02.jpg" alt="" /></a>
 							<h2>Ground Control</h2>
 							<p>
-								Come launch time, its go time for you. Your job is make sure everything on the ground goes smoothly during launch. Of course,
-								you have to figure out how to make the launch pad work too.
+								Come launch time, its go time for you. Your job is to control each stage of the launch and not blow anything up.
 							</p>
 						</section>
 
@@ -125,7 +137,7 @@
 							<a href="flight_engineer.html" class="bordered-feature-image"><img src="images/pic03.jpg" alt="" /></a>
 							<h2>Flight Engineer</h2>
 							<p>
-								Aerodynamics is your speciality. This spacecraft must fly and your job is to design a build a flightworthy craft. Oh yeah,
+								Aerodynamics is your speciality. This spacecraft must fly and your job is to design and build a flightworthy craft. Oh yeah,
 								don't forget to attach the parachute.
 							</p>
 						</section>
@@ -139,7 +151,7 @@
 							<h2>Communication Specialist</h2>
 							<p>
 								You've got the easy job. All you have to do is make sure the parachute deploys when it's suppossed to. Oh yeah, the president
-								called and wants some kindof fancy dashboard to read the data.
+								called and wants some kindof fancy dashboard to see the data.
 							</p>
 						</section>
 
